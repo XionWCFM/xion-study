@@ -3,9 +3,9 @@ import { Ingredient } from './ingredient';
 export type ProductTitle = string;
 
 export type Product = {
-  id: string;
-  title: string;
-  price: number;
+  id: UniqueId;
+  title: ProductTitle;
+  price: PriceCents;
   toppings: Ingredient[];
 };
 

@@ -5,11 +5,11 @@ import { User } from './user';
 export type OrderStatus = 'new' | 'delivery' | 'completed';
 
 export type Order = {
-  user: string;
+  user: UniqueId;
   cart: Cart;
-  created: string;
+  created: DateTimeString;
   status: OrderStatus;
-  total: number;
+  total: PriceCents;
 };
 
 export const createOrder = (user: User, cart: Cart): Order => {
