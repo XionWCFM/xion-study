@@ -1,6 +1,6 @@
-import { UserName } from '../domain/user';
-import { useAuth } from '../services/auth-adapter';
-import { useUserStorage } from '../services/storage-adapter';
+import { UserName } from '../../domain/user';
+import { useAuth } from '../../services/adapter/auth-adapter';
+import { useUserStorage } from '../../services/adapter/storage-adapter';
 
 export const useAuthenticate = () => {
   const storage = useUserStorage();
