@@ -1,6 +1,6 @@
 import { UserName } from './../domain/user';
 import { AuthenticationService } from '../application/ports';
-import { fakeApi } from './api';
+import { fakeApi } from '../lib/api';
 
 export const useAuth = (): AuthenticationService => {
   return {

@@ -1,5 +1,5 @@
 import { PaymentService } from '../application/ports';
-import { fakeApi } from './api';
+import { fakeApi } from '../lib/api';
 
 export const usePayment = (): PaymentService => {
   return {

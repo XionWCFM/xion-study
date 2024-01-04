@@ -1,5 +1,5 @@
 import React from 'react';
-import { cookies } from './fake-data';
+import { cookies } from '../lib/fake-data';
 import { Cart } from '../domain/cart';
 import { User } from '../domain/user';
 import { Order } from '../domain/order';
