@@ -4,7 +4,7 @@ import { fakeApi } from './api';
 
 export const useAuth = (): AuthenticationService => {
   return {
-    auth(name: UserName, email: Email) {
+    auth: (name: UserName, email: Email) => {
       return fakeApi({
         name,
         email,
